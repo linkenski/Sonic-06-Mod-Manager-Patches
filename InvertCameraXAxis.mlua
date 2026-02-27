@@ -5,7 +5,12 @@ Platform("All Systems")
 Blurb("Inverts the camera on the X axis.")
 
 --[Functions]--
-All Systems:
+Xbox 360:
 BeginBlock("core\archives\game.arc")
 StringReplace("core\cameraparam.lub"|"az_driveK = "|"az_driveK = -")
 EndBlock("core\archives\game.arc")
+
+PlayStation 3:
+BeginBlock("core\archives\cache.arc")
+StringReplace("core\cameraparam.lub"|"az_driveK = "|"az_driveK = -")
+EndBlock("core\archives\cache.arc")
